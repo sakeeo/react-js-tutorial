@@ -1,2 +1,1 @@
-# invinity-scroll-react
-invinity-scroll-react
+#SIMPLE APP
