@@ -1,6 +1,7 @@
 import React from "react";
 import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 import InvinityScroll from "./Pages/InvinityScroll";
+import FindMovies from "./Pages/FindMovies";
 
 export default function App() {
   return (
@@ -13,6 +14,9 @@ export default function App() {
           <li>
             <Link to="/InvinityScroll">Infinity Scroll</Link>
           </li>
+          <li>
+            <Link to="/FindMovies">Infinity Scroll - Movies</Link>
+          </li>
         </ul>
 
         <hr />
@@ -20,6 +24,7 @@ export default function App() {
         <Switch>
           <Route exact path="/"><Home/></Route>
           <Route path="/InvinityScroll" component={InvinityScroll}></Route>
+          <Route path="/FindMovies" component={FindMovies}></Route>
         </Switch>
       </div>
     </Router>
